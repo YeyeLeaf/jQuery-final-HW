@@ -1,0 +1,319 @@
+  /* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+  */
+
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed, 
+  figure, figcaption, footer, header, hgroup, 
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure, 
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol, ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  p {
+      font-size: 14px;
+      font-weight: bold;
+  }
+  h2 {
+      font-weight: bold;
+  }
+  .container {
+      width: 1002px;
+      margin: 0 auto;
+  }
+  .headertop {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      background-color: #f6f6f6;
+      padding: 6px 12px;
+    }
+  .headertop p{
+      color: #cccccc;
+  }
+  .headertop a{
+      color: #4460a0;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+  }
+  .headertop a:nth-child(1){
+      color: #00aaec;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar h1 {
+    float: left;
+  }
+  .navbar h1 a {
+    background-image: url('https://i.postimg.cc/cJBJkLVp/logo.png');
+    width: 224px;
+    height: 50px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  .menu a {
+    padding: 15px 10px;
+    color: #00cc99;
+    background-color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+  }
+  .menu a:hover {
+    padding-bottom: 14px;
+    border-bottom: 3px solid #00cc99;
+  }
+  .menu a:active, .menu a.active {
+    color: white;
+    background-color: #00cc99;
+  }
+  .menu > li {
+    position: relative;
+  }
+  .dropdown-open {
+    position: absolute;
+    z-index: 99;
+    top: 45px;
+    right: 0;
+    white-space: nowrap;
+    display: none;
+  }
+  .banner {
+    position: relative;
+  }
+  .back {
+    background-color: black;
+    opacity: 0.2;
+    position: absolute;
+    height: 160px;
+    width: 100%;
+    top: 94px;
+  }
+  .banner p {
+    font-size: 34px;
+    margin: 40px 24px;
+    width: 100%;
+    color: white;
+    font-weight: normal;
+    position: absolute;
+    top: 87px;
+    box-sizing: border-box;
+    line-height: 48px;
+  }
+  .course {
+    display: flex;
+    justify-content: space-around;
+    margin: 65px 0;
+  }
+  .card {
+    width: 300px;
+    box-shadow: 1px 1px 5px darkgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 20px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    transition: transform 0.2s;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  } 
+  .card a {
+    margin: auto auto;
+  }
+  .card h2 {
+    text-align: center;
+    font-weight: bolder;
+    line-height: 26px;
+  }
+  .card p{
+    text-align: justify;
+    line-height: 20px;
+    font-weight: normal;
+  }
+  .card ul {
+    list-style-type: square;
+    list-style-position: unset;
+    margin-left: 20px;
+  }
+  .card li {
+    line-height: 20px;
+    font-size: 14px;
+  }
+  .cmpTbl {
+    margin: 0 auto;
+    width: 842px;
+  }
+  .cmpTbl caption {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .cmpTbl th, td {
+    font-size: 14px;
+    padding: 10px 23px;
+    text-align: left;
+    border-top: 0.5px solid #dddddd;
+    border-bottom: 0.5px solid #dddddd;
+    font-weight: bolder;
+  }
+  .cmpTbl th {
+    background-color: #f7f7f7;
+  }
+  .cmpTbl span {
+    color: #00cc99;
+  }
+  .joinUs {
+    background:  url('https://i.postimg.cc/13vWsTR9/form-Background.png') repeat-x #009872 ;
+    padding: 30px 20px;
+    margin-top: 62px; 
+    box-sizing: border-box;
+  }
+  .joinUs h3 {
+    color: white;
+    font-size: 22px;
+    line-height: 36px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  .joinUs textarea {
+    width: 460px;
+    height: 245px;
+    border-radius: 5px;
+    resize: none;
+  }
+  .joinUs label {
+    color: white;
+    font-size: 14px;
+    display: block;
+    line-height: 22px;
+  }
+  .joinUs input {
+    display: block;
+    width: 460px;
+    padding: 8px 10px;
+    margin-bottom: 10px;  
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+  }
+  ::placeholder {
+    color: black;
+  }
+  .joinUs form {
+    display: flex;
+    justify-content: space-between;
+  }
+  .personalInfor {
+    position: relative;
+  }
+  .joinUs .button {
+    background-color: #00cc99;
+    color: white;
+    font-size: 14px;
+    width: auto;
+    margin-top: 10px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+  }
+  .joinUs .button:hover {
+    color: #00cc99;
+    background-color: white;
+  }
+  .joinUs .button:active {
+    color: #009872;
+  }
+  .footer {
+    background-color: white;
+    padding: 26px 20px;
+    height: 120px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .footer img {
+    position: absolute;
+    left: 20px;
+  }
+  .footer .contact {
+    position: absolute;
+    right: 15px;
+  }
+  .footer p {
+    line-height: 24px;
+  }
+  .footer span {
+    color: #e12d80;
+  }
+  .top {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    transition: all 0.5s;
+    border-radius: 9999px;
+    box-shadow: 1px 1px 4px #009872;
+    background-color: white;
+    z-index: 99;
+  }
+  .top:hover {
+    padding-bottom: 10px;
+  }
+  .swiper {
+    width: 1002px;
+    height: 346px;
+  }
